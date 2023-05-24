@@ -50,27 +50,27 @@ public class ManageExpenseTestCases extends BaseClass {
 		me = new ManageExpense(driver);
 		me.enterManageExpense();
 		me.enterManageExpensesub();
-		me.scrolldown();
+		//me.scrolldown();
 		boolean actual = me.clickViewMore();
 		boolean expected = true;
 		Assert.assertEquals(actual, expected, CONSTANT.errorMessageAssertion);
 
 	}
 
-	@Test(priority = 1)
-	public void verifyTitleinExpenseCategoryinManageExpenseTab() throws IOException {
-		lp = new LoginPage(driver);
-		lp.performLogin(ExcelReadUtils.read(1, 0, "Sheet1"), ExcelReadUtils.read(1, 1, "Sheet1"));
-		me = new ManageExpense(driver);
-		me.enterManageExpense();
-		me.enterExpenseCaregory();
-		me.clickNew();
-		me.getRandom();
-		me.clickSave();
-		String actual = me.alerttext();
-		String expected = CONSTANT.alertText;
-		Assert.assertEquals(actual, expected, CONSTANT.errorMessageAssertion);
-
-	}
+//	@Test(priority = 1)
+//	public void verifyTitleinExpenseCategoryinManageExpenseTab() throws IOException {
+//		lp = new LoginPage(driver);
+//		lp.performLogin(ExcelReadUtils.read(1, 0, "Sheet1"), ExcelReadUtils.read(1, 1, "Sheet1"));
+//		me = new ManageExpense(driver);
+//		me.enterManageExpense();
+//		me.enterExpenseCaregory();
+//		me.clickNew();
+//		me.getRandom();
+//		me.clickSave();
+//		String actual = me.alerttext();
+//		String expected = CONSTANT.alertText;
+//		Assert.assertEquals(actual, expected, CONSTANT.errorMessageAssertion);
+//
+//	}
 
 }

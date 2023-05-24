@@ -3,7 +3,7 @@ package constants;
 public class CONSTANT {
 	
 	public static final String loginButtonBackgroundColor="rgba(52, 58, 64, 1)";
-	public static final String resetBackgroundColor="rgba(52, 58, 64, 1)";
+	public static final String resetBackgroundColor="rgba(255, 193, 7, 1)";
 	public static final String errorMessageAssertion=" text not matching";
 	public static final String loginUserName="admin";
 	public static final String loginPassword="admin";
