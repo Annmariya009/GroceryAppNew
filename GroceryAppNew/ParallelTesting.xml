@@ -1,0 +1,39 @@
+<suite name="MySuite" parallel= "tests" thread-count="2">
+	<test name="chrometest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			
+			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.MobileSliderTestCases"></class>
+			<class name="testCases.ManageCategoryTestCases"></class>
+			<class name="testCases.ManageDeliveryBoyTestCases"></class>
+			<class name="testCases.ManageSliderTestCases"></class>
+			<class name="testCases.ManageProductTestCases"></class>
+			<class name="testCases.PushNotificationsTestCases"></class>
+			<class name="testCases.ManageUsersTestCases"></class>
+		    <class name="testCases.ManageExpenseTestCases"></class>	
+		    <class name="testCases.ManageContentTestCases"></class>	
+		    <class name="testCases.LoginDataProviderTestCase"></class>	
+		    <class name="testCases.AdminUsersTestCases"></class>	
+	
+			
+		</classes>
+	</test>
+	<test name="Edgetest">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			
+			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.MobileSliderTestCases"></class>
+			<class name="testCases.ManageCategoryTestCases"></class>
+			<class name="testCases.ManageDeliveryBoyTestCases"></class>
+			<class name="testCases.ManageSliderTestCases"></class>
+			<class name="testCases.ManageProductTestCases"></class>
+			<class name="testCases.PushNotificationsTestCases"></class>
+			<class name="testCases.ManageUsersTestCases"></class>
+		    <class name="testCases.ManageExpenseTestCases"></class>	
+		    <class name="testCases.ManageContentTestCases"></class>	
+		    <class name="testCases.LoginDataProviderTestCase"></class>	
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,13 @@
+<suite name="MySuite">
+	<test name="MyTest">
+		<groups>
+			<run>
+				<include name="Critical"></include>
+				<include name="High"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.LoginTestCases"></class>
+		</classes>
+	</test>
+</suite>
